@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 
 public class MainApp extends Application {
@@ -17,8 +18,10 @@ public class MainApp extends Application {
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/Styles.css");
         
-        stage.setTitle("JavaFX and Maven");
+        stage.setTitle("School Manager");
         stage.setScene(scene);
+        stage.initStyle(StageStyle.UNDECORATED);
+        stage.setResizable(true);
         stage.show();
     }
 
