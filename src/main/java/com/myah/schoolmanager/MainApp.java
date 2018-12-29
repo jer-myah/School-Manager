@@ -21,7 +21,6 @@ public class MainApp extends Application {
         stage.setTitle("School Manager");
         stage.setScene(scene);
         stage.initStyle(StageStyle.UNDECORATED);
-        stage.setResizable(true);
         stage.show();
     }
 
